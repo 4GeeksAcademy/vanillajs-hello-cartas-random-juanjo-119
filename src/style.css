@@ -1,5 +1,58 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    background: green;
+    font-family: 'Segoe UI', sans-serif;
+}
 
-body{
+.carta {
+    border: 2px solid #000;
+    border-radius: 12px;
+    width: 180px;
+    height: 290px;
     background: white;
+    display: grid;
+    grid-template-areas: "tl tr" "mid mid" "bl br";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    padding: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.corner {
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.tl {
+    grid-area: tl;
+    justify-self: start;
+    align-self: start;
+}
+
+.br {
+    grid-area: br;
+    justify-self: end;
+    align-self: end;
+    transform: rotate(180deg);
+}
+
+.mid {
+    grid-area: mid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 140px;
+}
+
+.rojo {
+    color: red;
+}
+
+.negro {
+    color: black;
 }
