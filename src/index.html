@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" href="./assets/img/4geeks.ico" />
@@ -11,14 +12,21 @@
 </head>
 
 <body>
-
+  <!-- Controles de tamaño -->
+  <div>
+    <label><strong>Ancho:</strong> <br><input type="number" id="ancho" value=" " placeholder="Agrega el ancho en px"></label>
+    <br>
+    <label><strong>Alto:</strong> <br><input type="number" id="alto" value=" " placeholder="Agrega el alto en px"></label>
+    <br><br>
+    <button type="button" id="cambiarTamaño">New Size</button>
+  </div>
   <!-- Carta maquetada -->
   <div class="carta" id="carta">
     <div class="corner tl" id="tl"></div>
     <div class="mid" id="mid"></div>
     <div class="corner br" id="br"></div>
   </div>
-
+  <button type="button" id="nuevaCartaBtn">New Card</button>
   <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
   <script type="module" src="/app.js"></script>
 </body>
