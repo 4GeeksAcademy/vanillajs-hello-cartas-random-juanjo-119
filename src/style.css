@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 90vh;
+    height: 95vh;
     justify-content: center;
     align-items: center;
     background: green;
