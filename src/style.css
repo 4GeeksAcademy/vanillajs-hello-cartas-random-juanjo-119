@@ -41,7 +41,6 @@ body {
     grid-area: br;
     justify-self: end;
     align-self: end;
-    transform: rotate(180deg);
 }
 
 .mid {
